@@ -50,6 +50,9 @@ WorkingDirectory=/home/qbit
 WantedBy=multi-user.target
 EOF
 
+#Adiciona permissão ao usuário
+chown qbit /home/qbit/
+
 # Recarrega o systemd
 systemctl daemon-reload
 
